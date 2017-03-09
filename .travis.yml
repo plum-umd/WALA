@@ -33,5 +33,5 @@ notifications:
 os:
   - linux
 install:
- - mvn clean verify deploy -DskipTests=true -B -q
+ - mvn clean deploy -DskipTests=true -B -q
 

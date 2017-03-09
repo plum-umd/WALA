@@ -12,7 +12,7 @@
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     <build-alias>b000</build-alias>
     <tycho-version>0.23.1</tycho-version>
-    <tycho.scmUrl>scm:git:ssh://github.com:wala/WALA.git</tycho.scmUrl>
+    <tycho.scmUrl>scm:git:ssh://github.com:plum-umd/WALA.git</tycho.scmUrl>
   </properties>
   <distributionManagement>
     <repository>
@@ -49,17 +49,17 @@
     <module>com.ibm.wala.ide.jdt.test</module>
     
     <module>com.ibm.wala.cast.js</module>
-    <module>com.ibm.wala.cast.js.html.nu_validator</module>
-    <module>com.ibm.wala.cast.js.test</module>
-    <module>com.ibm.wala.cast.js.test.data</module>
+    <!-- <module>com.ibm.wala.cast.js.html.nu_validator</module> -->
+    <!-- <module>com.ibm.wala.cast.js.test</module> -->
+    <!-- <module>com.ibm.wala.cast.js.test.data</module> -->
     <module>com.ibm.wala.cast.js.rhino</module>
-    <module>com.ibm.wala.cast.js.rhino.test</module>
+    <!-- <module>com.ibm.wala.cast.js.rhino.test</module> -->
     
     <module>com.ibm.wala.ide.jsdt</module>
-    <module>com.ibm.wala.ide.jsdt.tests</module>
+    <!-- <module>com.ibm.wala.ide.jsdt.tests</module> -->
     
-    <module>com.ibm.wala.dalvik</module>
-    <module>com.ibm.wala.dalvik.test</module>
+    <!-- <module>com.ibm.wala.dalvik</module> -->
+    <!-- <module>com.ibm.wala.dalvik.test</module> -->
     
     <module>com.ibm.wala.scandroid</module>
     
