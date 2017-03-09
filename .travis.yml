@@ -32,6 +32,6 @@ notifications:
       - dvanhorn@cs.umd.edu
 os:
   - linux
-install:
+script:
  - mvn clean deploy -DskipTests=true -B
 
