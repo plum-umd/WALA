@@ -20,8 +20,8 @@
     # - $HOME/.m2
     # - $TRAVIS_BUILD_DIR/com.ibm.wala.core.testdata/ocaml/ocamljava-2.0-alpha1/lib
     
-#sudo: required
-sudo: false
+sudo: required
+#sudo: false
 #dist: trusty
 language: java
 jdk: oraclejdk8
