@@ -35,6 +35,7 @@ notifications:
 #os:
   #- linux
 script:
+ - pwd
  - mkdir -p target/mvn-repo
  - mvn clean deploy -DskipTests=true -B
 
