@@ -19,7 +19,7 @@
     <repository>
       <id>internal.repo</id>
       <name>Staging Repository</name>
-      <url>file://${project.build.directory}/mvn-repo</url>
+      <url>file://${user.dir}/target/mvn-repo</url>
     </repository>
   </distributionManagement>
 
