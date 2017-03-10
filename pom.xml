@@ -13,6 +13,7 @@
     <build-alias>b000</build-alias>
     <tycho-version>0.23.1</tycho-version>
     <tycho.scmUrl>scm:git:ssh://github.com:plum-umd/WALA.git</tycho.scmUrl>
+    <github.global.server>github</github.global.server>
   </properties>
   <distributionManagement>
     <repository>
@@ -29,10 +30,10 @@
     <module>com.ibm.wala.core</module>
     <module>com.ibm.wala.shrike</module>
     <module>com.ibm.wala.util</module>
-    
+
     <module>com.ibm.wala.core.testdata</module>
     <module>com.ibm.wala.core.tests</module>
-    
+
     <module>com.ibm.wala.cast</module>
     <module>com.ibm.wala.cast.test</module>
     <module>com.ibm.wala.cast.java</module>
@@ -40,39 +41,39 @@
     <module>com.ibm.wala.cast.java.test.data</module>
 
     <module>com.ibm.wala.cast.java.ecj</module>
-    
+
     <module>com.ibm.wala.ide-feature</module>
     <module>com.ibm.wala.ide</module>
     <module>com.ibm.wala.ide.tests</module>
-    
+
     <module>com.ibm.wala.ide.jdt</module>
     <module>com.ibm.wala.ide.jdt.test</module>
-    
+
     <module>com.ibm.wala.cast.js</module>
     <!-- <module>com.ibm.wala.cast.js.html.nu_validator</module> -->
     <!-- <module>com.ibm.wala.cast.js.test</module> -->
     <!-- <module>com.ibm.wala.cast.js.test.data</module> -->
     <module>com.ibm.wala.cast.js.rhino</module>
     <!-- <module>com.ibm.wala.cast.js.rhino.test</module> -->
-    
+
     <module>com.ibm.wala.ide.jsdt</module>
     <!-- <module>com.ibm.wala.ide.jsdt.tests</module> -->
-    
+
     <!-- <module>com.ibm.wala.dalvik</module> -->
     <!-- <module>com.ibm.wala.dalvik.test</module> -->
-    
+
     <!-- <module>com.ibm.wala.scandroid</module> -->
-    
+
     <module>com.ibm.wala-repository</module>
-    
+
   </modules>
 
   <profiles>
    <profile>
     <id>linux</id>
     <activation>
-      <os> 
-        <family>unix</family> 
+      <os>
+        <family>unix</family>
         <name>Linux</name>
       </os>
     </activation>
@@ -92,8 +93,30 @@
           <artifactId>maven-deploy-plugin</artifactId>
           <version>2.8.1</version>
           <configuration>
-              <altDeploymentRepository>internal.repo::default::file://${project.build.directory}/mvn-repo</altDeploymentRepository>
+            <altDeploymentRepository>internal.repo::default::file://${us‌​er.dir}/target/mvn-r‌​epo</altDeploymentRepository>
           </configuration>
+        </plugin>
+        <plugin>
+          <groupId>com.github.github</groupId>
+          <artifactId>site-maven-plugin</artifactId>
+          <version>0.11</version>
+          <configuration>
+            <message>Maven artifacts for ${project.version}</message>
+            <noJekyll>true</noJekyll>
+            <outputDirectory>${user.dir}/target/mvn-repo</outputDirectory>
+            <branch>refs/heads/mvn-repo</branch>
+            <includes><include>**/*</include></includes>
+            <repositoryName>WALA</repositoryName>
+            <repositoryOwner>plum-umd</repositoryOwner>
+          </configuration>
+          <executions>
+            <execution>
+              <goals>
+                <goal>site</goal>
+              </goals>
+              <phase>deploy</phase>
+            </execution>
+          </executions>
         </plugin>
       </plugins>
     </build>
@@ -130,7 +153,7 @@
 	  <source>1.7</source>
 	  <target>1.7</target>
           <compilerArgument>-err:-forbidden</compilerArgument>
-          <compilerArguments>                 
+          <compilerArguments>
             <properties>${project.basedir}/.settings/org.eclipse.jdt.core.prefs</properties>
           </compilerArguments>
 	</configuration>
@@ -179,7 +202,7 @@
 	      <type>eclipse-plugin</type>
 	      <artifactId>org.eclipse.osgi.compatibility.state</artifactId>
 	      <version>0.0.0</version>
-	    </dependency>         
+	    </dependency>
 	  </dependencies>
 
 	  <useuiharness>false</useuiharness>
@@ -255,7 +278,7 @@
         <groupId>org.apache.maven.plugins</groupId>
         <artifactId>maven-surefire-plugin</artifactId>
         <version>2.14.1</version>
-      </plugin>		
+      </plugin>
 </plugins>
 </build>
 <pluginRepositories>
@@ -269,5 +292,5 @@
       <enabled>true</enabled>
     </releases>
   </pluginRepository>
-</pluginRepositories>	
+</pluginRepositories>
 </project>
