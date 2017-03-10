@@ -34,5 +34,7 @@ notifications:
       - dvanhorn@cs.umd.edu
 #os:
   #- linux
-script: mvn clean deploy -DskipTests=true -B
+script:
+ - mkdir -p target/mvn-repo
+ - mvn clean deploy -DskipTests=true -B
 
