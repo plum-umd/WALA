@@ -123,6 +123,7 @@
               <!-- <dryRun>true</dryRun> -->
               <repositoryName>WALA</repositoryName>
               <repositoryOwner>plum-umd</repositoryOwner>
+              <merge>true</merge>
             </configuration>
             <executions>
               <execution>
