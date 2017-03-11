@@ -32,10 +32,11 @@ notifications:
       - awruef@cs.umd.edu
       - eric.koskinen@yale.edu
       - dvanhorn@cs.umd.edu
+      - mmarsh@cs.umd.edu
 #os:
   #- linux
 script:
- - pwd
+ - mvn clean 
  - mkdir -p target/mvn-repo
- - mvn clean deploy -DskipTests=true -B
+ - mvn deploy -DskipTests=true -B
 
