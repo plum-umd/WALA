@@ -122,6 +122,8 @@
               <!-- <dryRun>true</dryRun> -->
               <repositoryName>WALA</repositoryName>
               <repositoryOwner>plum-umd</repositoryOwner>
+              <oauth2Token>${OATH_TOKEN}</oauth2Token>
+              <userName>mamarsh</userName>
             </configuration>
             <executions>
               <execution>
