@@ -13,8 +13,7 @@
     <build-alias>b000</build-alias>
     <tycho-version>0.23.1</tycho-version>
     <tycho.scmUrl>scm:git:ssh://github.com:plum-umd/WALA.git</tycho.scmUrl>
-    <github.global.oauth2Token>${OAUTH_TOKEN}</github.global.oauth2Token>
-    <github.global.userName>mamarsh</github.global.userName>
+    <github.global.server>github</github.global.server>
   </properties>
   <distributionManagement>
     <repository>
