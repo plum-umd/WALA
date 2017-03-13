@@ -120,7 +120,7 @@
               <branch>refs/heads/mvn-repo</branch>
               <merge>true</merge>
               <includes><include>**/*</include></includes>
-              <!-- <dryRun>true</dryRun> -->
+              <dryRun>true</dryRun>
               <repositoryName>WALA</repositoryName>
               <repositoryOwner>plum-umd</repositoryOwner>
             </configuration>
