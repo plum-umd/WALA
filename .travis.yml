@@ -19,7 +19,7 @@
   # directories:
     # - $HOME/.m2
     # - $TRAVIS_BUILD_DIR/com.ibm.wala.core.testdata/ocaml/ocamljava-2.0-alpha1/lib
-    
+
 sudo: false
 #sudo: false
 #dist: trusty
@@ -36,6 +36,4 @@ notifications:
 #os:
   #- linux
 script:
- - mkdir -p target/mvn-repo
- - mvn deploy -DskipTests=true -B --settings settings.xml
-
+ - mvn clean deploy -DskipTests=true -B --settings settings.xml
