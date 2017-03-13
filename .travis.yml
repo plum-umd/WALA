@@ -36,4 +36,4 @@ notifications:
 #os:
   #- linux
 script:
- - mvn deploy -DskipTests=true -B --settings settings.xml
+ - MAVEN_OPTS='-Xmx2048m' mvn deploy -DskipTests=true -B --settings settings.xml
