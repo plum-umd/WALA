@@ -118,7 +118,7 @@
               <noJekyll>true</noJekyll>
               <outputDirectory>${user.dir}/target/mvn-repo</outputDirectory>
               <branch>refs/heads/mvn-repo</branch>
-              <merge>true</merge>
+              <!-- <merge>true</merge> -->
               <includes><include>**/*</include></includes>
               <!-- <dryRun>true</dryRun> -->
               <repositoryName>WALA</repositoryName>

@@ -36,4 +36,4 @@ notifications:
 #os:
   #- linux
 script:
- - mvn clean deploy -DskipTests=true -B --settings settings.xml
+ - travis_wait mvn deploy -DskipTests=true -B --settings settings.xml
