@@ -1,0 +1,23 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<?artifactRepository version='1.1.0'?>
+<artifacts size='2'>
+  <artifact classifier='osgi.bundle' id='com.ibm.wala.shrike' version='1.3.10.v20170314-0113-b000'>
+    <properties size='5'>
+      <property name='artifact.size' value='411187'/>
+      <property name='download.size' value='411187'/>
+      <property name='maven-groupId' value='com.ibm.wala'/>
+      <property name='maven-artifactId' value='com.ibm.wala.shrike'/>
+      <property name='maven-version' value='1.3.10-SNAPSHOT'/>
+    </properties>
+  </artifact>
+  <artifact classifier='osgi.bundle' id='com.ibm.wala.shrike.source' version='1.3.10.v20170314-0113-b000'>
+    <properties size='6'>
+      <property name='artifact.size' value='227652'/>
+      <property name='download.size' value='227652'/>
+      <property name='maven-groupId' value='com.ibm.wala'/>
+      <property name='maven-artifactId' value='com.ibm.wala.shrike'/>
+      <property name='maven-version' value='1.3.10-SNAPSHOT'/>
+      <property name='maven-classifier' value='sources'/>
+    </properties>
+  </artifact>
+</artifacts>
