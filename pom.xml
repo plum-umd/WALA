@@ -40,9 +40,9 @@
     <!-- <module>com.ibm.wala.core.testdata</module> -->
     <!-- <module>com.ibm.wala.core.tests</module> -->
 
-    <!-- <module>com.ibm.wala.cast</module> -->
+    <module>com.ibm.wala.cast</module>
     <!-- <module>com.ibm.wala.cast.test</module> -->
-    <!-- <module>com.ibm.wala.cast.java</module> -->
+    <module>com.ibm.wala.cast.java</module>
     <!-- <module>com.ibm.wala.cast.java.test</module> -->
     <!-- <module>com.ibm.wala.cast.java.test.data</module> -->
 
