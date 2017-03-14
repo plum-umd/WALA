@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<metadata modelVersion="1.1.0">
+  <groupId>com.ibm.wala.target</groupId>
+  <artifactId>e44</artifactId>
+  <version>1.3.10-SNAPSHOT</version>
+  <versioning>
+    <snapshot>
+      <timestamp>20170314.011231</timestamp>
+      <buildNumber>1</buildNumber>
+    </snapshot>
+    <lastUpdated>20170314011231</lastUpdated>
+    <snapshotVersions>
+      <snapshotVersion>
+        <extension>target</extension>
+        <value>1.3.10-20170314.011231-1</value>
+        <updated>20170314011231</updated>
+      </snapshotVersion>
+      <snapshotVersion>
+        <extension>pom</extension>
+        <value>1.3.10-20170314.011231-1</value>
+        <updated>20170314011231</updated>
+      </snapshotVersion>
+    </snapshotVersions>
+  </versioning>
+</metadata>
